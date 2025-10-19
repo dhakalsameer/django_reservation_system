@@ -4,6 +4,7 @@ from django.contrib.auth import login, logout
 from django.contrib.auth.forms import AuthenticationForm
 from .models import Reservation
 from .forms import ReservationForm, RegisterForm
+from django.http import HttpResponse
 
 
 @login_required
@@ -74,3 +75,12 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('login')
+
+
+def index(request):
+    return HttpResponse("""
+        <h1>Welcome to the Reservation System</h1>
+        <p>This is your deployed Django app on Render 🚀</p>
+        <p><a href='/login/'>Login</a> | <a href='/register/'>Register</a></p>
+    """)
+
