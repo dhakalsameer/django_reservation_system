@@ -18,6 +18,8 @@ Deployed live on **Render**.
 
 ---
 
+![Django Reservation System](https://raw.githubusercontent.com/dhakalsameer/django_reservation_system/main/screenshot.png)
+
 ## 🖥️ Tech Stack
 
 | Category | Technology |
