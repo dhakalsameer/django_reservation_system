@@ -78,9 +78,5 @@ def logout_view(request):
 
 
 def index(request):
-    return HttpResponse("""
-        <h1>Welcome to the Reservation System</h1>
-        <p>This is your deployed Django app on Render 🚀</p>
-        <p><a href='/login/'>Login</a> | <a href='/register/'>Register</a></p>
-    """)
+    return render(request, 'index.html')
 
